@@ -1,13 +1,152 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
+
+nav {
+  height: 70px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  height: 36px;
+}
+
+.photo-hero {
+  width: 70%;
+  margin: 70px auto;
+}
+
+.ctn-hero {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.ctn-hero .photo-hero {
+  min-width: 400px;
+}
+
+.ctn-hero h1 {
+  font-size: 40px;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.ctn-hero p {
+  font-size: 20px;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.cards-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.card {
+  width: 240px;
+  position: relative;
+}
+
+.promo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: aliceblue;
+  padding: 2px 4px;
+  font-size: 14px;
+  border-radius: 4px;
+
+}
+
+.card .img-profil {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card .card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.first-line {
+  display: flex;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+}
+
+.first-line span {
+  margin: 0 4px;
+}
+
+.avis::after {
+  content: ")";
+}
+
+.avis::before {
+  content: "(";
+}
+
+.avis,
+.country {
+  color: rgb(29, 28, 28);
+}
+
+.third-line,
+.second-line {
+  margin: 4px 0;
+  text-align: start;
+}
+
+.third-line span {
+  font-weight: bold;
+}
+
+
+
+.container {
+  display: grid; 
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 20px; 
+  margin: 50px 80px;
+  grid-template-areas: 
+    ". B . F ."
+    "A B D F H"
+    "A C D G H"
+    ". C E G ."; 
+}
+
+
+.A { grid-area: A; }
+.B { grid-area: B; }
+.C { grid-area: C; }
+.D { grid-area: D; }
+.E { grid-area: E; }
+.F { grid-area: F; }
+.G { grid-area: G; }
+.H { grid-area: H; }
+
+.image-hero{
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 38vh;
+}
+

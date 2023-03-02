@@ -1,4 +1,4 @@
-# Airbnb clon- React practice
+# Airbnb clon- React practice.
 
 ![airbnbclon](https://user-images.githubusercontent.com/72797333/188680711-4319e765-10b6-407d-a385-1f3bef0976bd.png)
 
